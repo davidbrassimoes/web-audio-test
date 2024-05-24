@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SCREWNATOR</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="app">
+      <h1 class="cormorant-garamond-light">SCREWNATOR</h1>
+
+      <input
+        type="file"
+        id="audioFile"
+        accept="audio/*"
+        style="display: none"
+      />
+      <button id="customButton" class="customButton kanit-black-italic">
+        CHOOSE A VICTIM
+      </button>
+      <span id="fileName" class="fileName"></span>
+      <label for="playbackRate" class="playbackRate kanit-light-italic"
+        >how screwed?
+        <span
+          id="playbackRateValue"
+          class="playbackRateValue kanit-black-italic"
+          >0</span
+        ></label
+      >
+      <input
+        type="range"
+        id="playbackRate"
+        min="0.1"
+        max="1"
+        step="0.01"
+        value="1"
+      />
+      <button id="playButton" class="playButton kanit-black-italic">
+        SCREW IT
+      </button>
+
+      <h2 class="cormorant-garamond-light-italic">
+        CHOPPED AND SCREWED MUSIC GENERATOR
+      </h2>
+      <h3 class="cormorant-garamond-light-italic">DIGITAL OBELISK 2024</h3>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
